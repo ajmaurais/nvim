@@ -7,6 +7,9 @@ vim.cmd([[
     " Use the system register for everything
     set clipboard=unnamedplus
 
+    " make backspaces more powerfull
+    set backspace=indent,eol,start
+
     set mouse=
     set expandtab           " enter spaces when tab is pressed
     set tabstop=4           " use 4 spaces to represent tab
