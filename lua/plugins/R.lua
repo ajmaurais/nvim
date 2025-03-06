@@ -1,8 +1,8 @@
 return {
- {
-    "R-nvim/R.nvim",
-    lazy = false,
-    config = function()
+    {
+        "R-nvim/R.nvim",
+        lazy = false,
+        config = function()
         -- Create a table with the options to be passed to setup()
         ---@type RConfigUserOpts
         local opts = {
@@ -10,12 +10,13 @@ return {
                 on_filetype = function()
                     vim.api.nvim_buf_set_keymap(0, "n", "<Enter>", "<Plug>RDSendLine", {})
                     vim.api.nvim_buf_set_keymap(0, "v", "<Enter>", "<Plug>RSendSelection", {})
-                 vim.api.nvim_buf_set_keymap(0, "n", " <Leader>pe", "<Plug>RSendParagraph", {})
+                    vim.api.nvim_buf_set_keymap(0, "n", " <Leader>pe", "<Plug>RSendParagraph", {})
                 end
             },
             R_args = {"--quiet", "--no-save"},
             min_editor_width = 90,
             rconsole_width = 110,
+            source_args = "echo = TRUE",
             disable_cmds = {
                 "RCustomStart",
                 "RSPlot",
