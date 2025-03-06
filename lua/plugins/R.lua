@@ -8,9 +8,9 @@ return {
         local opts = {
             hook = {
                 on_filetype = function()
-                    vim.api.nvim_buf_set_keymap(0, "n", "<Enter>", "<Plug>RDSendLine", {})
-                    vim.api.nvim_buf_set_keymap(0, "v", "<Enter>", "<Plug>RSendSelection", {})
-                    vim.api.nvim_buf_set_keymap(0, "n", " <Leader>pe", "<Plug>RSendParagraph", {})
+                    vim.api.nvim_buf_set_keymap(0, "n", "<LocalLeader>d", "<Plug>RDSendLine", {})
+                    vim.api.nvim_buf_set_keymap(0, "v", "<LocalLeader>se", "<Plug>RSendSelection", {})
+                    vim.api.nvim_buf_set_keymap(0, "n", "<LocalLeader>pe", "<Plug>RSendParagraph", {})
                 end
             },
             R_args = {"--quiet", "--no-save"},
