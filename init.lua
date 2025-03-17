@@ -4,6 +4,10 @@ vim.cmd([[
     colorscheme monokai-pro
     set background=dark
 
+    " Background highlighting settings
+    highlight Normal guibg=#272822
+    highlight LineNr guibg=NONE ctermbg=NONE
+
     " Use the system register for everything
     set clipboard=unnamedplus
 
