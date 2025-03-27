@@ -1,5 +1,5 @@
 {
-  "R.nvim": { "branch": "main", "commit": "0d264fb2e2fd42cd54e29467a6243eafa8f31903" },
+  "R.nvim": { "branch": "main", "commit": "3f06d410e53009fdb41e58bbf49052636adc93b1" },
   "cmp-r": { "branch": "main", "commit": "7fdcc523d0629e587602288eb4ae367dd899a3bb" },
   "jedi-vim": { "branch": "master", "commit": "344814c214391368674813e3a11143448e73e749" },
   "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" },
@@ -8,6 +8,6 @@
   "neomake": { "branch": "master", "commit": "584f882b9f991245374e7e7d7d1f78bae90b7a35" },
   "nvim-cmp": { "branch": "main", "commit": "1e1900b0769324a9675ef85b38f99cca29e203b3" },
   "nvim-tmux-navigation": { "branch": "main", "commit": "4898c98702954439233fdaf764c39636681e2861" },
-  "nvim-treesitter": { "branch": "master", "commit": "d76a8b6e1b67fd3bcffec4a5d45fd9dee4dbbee8" },
+  "nvim-treesitter": { "branch": "master", "commit": "da5825bf70cc2ea7eacd1e60c32c07baf19adeba" },
   "vim-language-nextflow": { "branch": "master", "commit": "0be2ac1b325427617e4926c117fe1cdb6a8c3a4e" }
 }
