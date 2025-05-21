@@ -23,10 +23,15 @@ vim.cmd([[
     set smartindent
     set smarttab
 
+    " Use 2 spaces for tab in R files
+    autocmd FileType r setlocal tabstop=2 shiftwidth=2
+
+    autocmd FileType make setlocal noexpandtab tabstop=4 shiftwidth=4
+
     " change leader timeout and mapping
     set notimeout nottimeout
 
-    set ruler                           " show line and column number
+    set ruler               " show line and column number
     set showcmd             " show (partial) command in status line
 
     " set relative line numbers on

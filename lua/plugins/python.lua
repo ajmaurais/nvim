@@ -4,6 +4,7 @@ return {
 
         init = function()
             vim.g["jedi#popup_select_first"] = 0
+            vim.g["jedi#show_call_signatures"] = 2
         end
     },
     {

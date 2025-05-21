@@ -14,7 +14,7 @@ return {
                 end
             },
             R_args = {"--quiet", "--no-save"},
-            R_nvim_wd = 1,
+            setwd = "nvim",
             min_editor_width = 90,
             rconsole_width = 110,
             source_args = "echo = TRUE",
