@@ -9,5 +9,6 @@
   "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },
   "nvim-tmux-navigation": { "branch": "main", "commit": "4898c98702954439233fdaf764c39636681e2861" },
   "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
-  "vim-language-nextflow": { "branch": "master", "commit": "0be2ac1b325427617e4926c117fe1cdb6a8c3a4e" }
+  "vim-language-nextflow": { "branch": "master", "commit": "0be2ac1b325427617e4926c117fe1cdb6a8c3a4e" },
+  "vimcmdline": { "branch": "master", "commit": "6f95b90148af0376bd0d3c63f268797bc47cc910" }
 }
