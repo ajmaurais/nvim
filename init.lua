@@ -52,3 +52,8 @@ vim.cmd([[
       set undodir=$HOME/.vim/undo  "directory where the undo files will be stored
     endif
 ]])
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+  pattern = "*",
+  command = [[%s/\s\+$//e]],
+})
