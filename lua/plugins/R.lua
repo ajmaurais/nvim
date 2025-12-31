@@ -29,9 +29,10 @@ return {
                 -- bg = "#003010",                  -- Use a different background color
                 events = "BufEnter,TextChanged", -- Update the highlighting more often
             },
-            -- view_df = {
-            --     n_lines = 0
-            -- }
+            view_df = {
+                save_fun = "function(o, oname) { f <- file.path(tempdir(), paste0(oname, '.tsv')); message(oname, ' -> ', f); write.table(o, f, row.names=FALSE, sep='\t'); system(paste('open', shQuote(f))); f }",
+                open_app = "true",
+            }
         }
         require("r").setup(opts)
     end,
