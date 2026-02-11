@@ -16,20 +16,23 @@ return {
     {
         "jalvesaq/vimcmdline",
         config = function()
-            vim.g.cmdline_map_start = "<LocalLeader>cf"
-            vim.g.cmdline_map_send = "<LocalLeader>d"
-            vim.g.cmdline_map_send_and_stay = "<LocalLeader>l"
-            vim.g.cmdline_app = {
-                python = "/usr/bin/env ipython"
-            }
-            vim.g.cmdline_in_buffer = 0
-            vim.g.cmdline_vsplit = 1
-            vim.g.cmdline_actions = {
-                python = {
-                    {"<LocalLeader>cp", "print(%s)"},
-                    {"<LocalLeader>rr", "%clear"}
-                }
-            }
+            require('hlterm').setup({
+                app = {
+                    python = "ipython",
+                },
+                mappings = {
+                    start = "<LocalLeader>cf",
+                    send = "<LocalLeader>d",
+                    send_and_stay = "<LocalLeader>l",
+                },
+                vsplit = true,
+                actions = {
+                    python = {
+                        { "<LocalLeader>cp", "print(%s)" },
+                        { "<LocalLeader>rr", "%clear" },
+                    },
+                },
+            })
         end,
     }
 }
