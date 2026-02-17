@@ -4,14 +4,14 @@ return {
         branch = "main",
         build = ":TSUpdate",
         config = function ()
+            local plugin_dir = vim.fn.stdpath("data") .. "/lazy/nvim-treesitter"
+            vim.opt.rtp:prepend(plugin_dir .. "/runtime")
             require("nvim-treesitter").setup()
-            local langs = { "lua", "markdown", "markdown_inline", "r", "rnoweb", "yaml", "csv" }
-            local installed = require("nvim-treesitter").get_installed()
-            for _, lang in ipairs(langs) do
-                if not vim.list_contains(installed, lang) then
-                    require("nvim-treesitter").install({ lang })
-                end
-            end
+            vim.api.nvim_create_autocmd("FileType", {
+                callback = function(ev)
+                    pcall(vim.treesitter.start, ev.buf, ev.match)
+                end,
+            })
         end
     },
 }
