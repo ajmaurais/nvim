@@ -30,6 +30,7 @@ return {
                 events = "BufEnter,TextChanged", -- Update the highlighting more often
             },
             view_df = {
+                n_lines = 0,
                 save_fun = "function(o, oname) { f <- file.path(tempdir(), paste0(oname, '.tsv')); message(oname, ' -> ', f); write.table(o, f, row.names=FALSE, sep='\t'); system(paste('open', shQuote(f))); f }",
                 open_app = "true",
             }
