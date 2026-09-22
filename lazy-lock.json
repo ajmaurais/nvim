@@ -1,12 +1,14 @@
 {
-  "R.nvim": { "branch": "main", "commit": "b5e2b36450c89a670f30b4a1f2c9eed1deac9c8a" },
-  "jedi-vim": { "branch": "master", "commit": "89a2122ab0ad30ebe258d8276bf584511fe27129" },
+  "R.nvim": { "branch": "main", "commit": "d64788f0f8e2097d734468bd04a76d2c46e47137" },
+  "diffview.nvim": { "branch": "main", "commit": "4516612fe98ff56ae0415a259ff6361a89419b0a" },
+  "jedi-vim": { "branch": "master", "commit": "a13c7bf64dbb4abcf676b4e41c5fedc2d4e7f6dd" },
   "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
-  "lightline.vim": { "branch": "master", "commit": "e358557e1a9f9fc860416c8eb2e34c0404078155" },
-  "monokai-pro.nvim": { "branch": "master", "commit": "d8884d4473667c48bd17a68d08383d38839136a3" },
+  "lightline.vim": { "branch": "master", "commit": "d042c506cb2e7a59112a72447e0b5fe8739d9d1d" },
+  "monokai-pro.nvim": { "branch": "master", "commit": "a68e38b8e55d69a215d0f02598900a79c356da9d" },
   "neomake": { "branch": "master", "commit": "584f882b9f991245374e7e7d7d1f78bae90b7a35" },
   "nvim-tmux-navigation": { "branch": "main", "commit": "4898c98702954439233fdaf764c39636681e2861" },
-  "nvim-treesitter": { "branch": "main", "commit": "b9171ede5de41b3f2dfa33fe33ebd585d795f928" },
+  "nvim-treesitter": { "branch": "main", "commit": "f603a2f4da48728f80257fb5fbb90145fd1dc173" },
+  "nvim-web-devicons": { "branch": "master", "commit": "58447c1fca354bbf184425e4a8d01deecbd6f3c4" },
   "vim-language-nextflow": { "branch": "master", "commit": "d01f1ccaf8db1d9ed5fbacceddbb7735429e6062" },
-  "vimcmdline": { "branch": "master", "commit": "2a4fb058448a30f7fe374332adfed50f4abfe497" }
+  "vimcmdline": { "branch": "master", "commit": "83701a7dd3940bce3c64fcd6c49c357cff23c513" }
 }
